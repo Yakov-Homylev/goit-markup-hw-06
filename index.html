@@ -326,6 +326,41 @@
                         <use href="./images/icons.svg#icon-exit"></use>
                     </svg>
                 </button>
+                <div class="modal-container">
+                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <form>
+                        <div class="modal-form-thumb">
+                            <label class="modal-form-label" for="name">Имя</label>
+                            <input class="modal-form-input" type="name" name="name" id="name">
+                            <svg class="modal-form-icon" width="12" height="12">
+                                <use href="./images/icons.svg#icon-name"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-form-thumb">
+                            <label class="modal-form-label" for="tel">Телефон</label>
+                            <input class="modal-form-input" type="tel" name="tel" id="tel">
+                            <svg class="modal-form-icon" width="13" height="13">
+                                <use href="./images/icons.svg#icon-tel"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-form-thumb">
+                            <label class="modal-form-label" for="email">Почта</label>
+                            <input class="modal-form-input" type="email" name="email" id="email">
+                            <svg class="modal-form-icon" width="15" height="12">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-form-thumb">
+                            <label class="modal-form-label" for="comment">Комментарий</label>
+                            <textarea class="modal-form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст" ></textarea>
+                        </div>
+                        <div class="modal-form-accept">
+                            <input class="checkbox-accept" type="checkbox" name="accept" id="accept">
+                            <label class="checkbox-text" for="accept">Соглашаюсь с рассылкой и принимаю <a class="checkbox-text-link" href="">Условия договора</a></label>
+                        </div>
+                        <button class="modal-form-button" type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -374,6 +409,17 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-email">
+                <form>
+                    <label class="footer-title" for="footer-subscribe">Подпишитесь на рассылку</label>
+                    <div class="subscribe-thumb">
+                        <input class="footer-subscribe-input" type="email" name="footer-subscribe" id="footer-subscribe" placeholder="E-mail">
+                        <button class="subscribe-button" type="submit"><span class="subscribe-text">Подписаться</span> <svg class="icon-telegram" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg></button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>

@@ -135,7 +135,7 @@ ul {
   margin-right: 50px;
 }
 .site-nav .link.curent::after {
-  content: '';
+  content: "";
   position: absolute;
 
   display: block;
@@ -227,6 +227,7 @@ ul {
   margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
+  border-color: transparent;
 
   transition: background-color 250ms var(--cubic-animation);
 }
@@ -493,6 +494,68 @@ ul {
   cursor: pointer;
 }
 
+.footer-email {
+  margin-left: 93px;
+}
+.footer-form {
+  margin-top: 20px;
+  display: flex;
+}
+.subscribe-thumb {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-subscribe-input {
+  display: block;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.subscribe-button {
+  padding: 10px 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--accent-color);
+
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--cubic-animation);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+.subscribe-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+}
+.icon-telegram {
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}
 /* Portfolio */
 /* Button portfolio */
 .filter {
@@ -631,13 +694,12 @@ ul {
 
 .modal {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
   min-width: 521px;
   min-height: 581px;
-  padding: 8px;
 
   background-color: var(--primary-white-color);
 
@@ -646,6 +708,9 @@ ul {
   transition: transform 250ms var(--cubic-animation);
 }
 .modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -655,4 +720,97 @@ ul {
   background-color: var(--primary-white-color);
   width: 30px;
   height: 30px;
+  cursor: pointer;
+  transition: fill 250ms var(--cubic-animation);
+}
+.modal-close:focus,
+.modal-close:hover {
+  fill: var(--accent-color);
+}
+.modal-container {
+  padding: 40px;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1, 15;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+
+  margin-bottom: 12px;
+}
+.modal-form-thumb {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-form-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  cursor: pointer;
+  transition: border-color 250ms var(--cubic-animation),
+    outline 250ms var(--cubic-animation);
+}
+.modal-form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transition: fill 250ms var(--cubic-animation);
+}
+.modal-form-thumb:focus-within .modal-form-icon {
+  fill: var(--accent-color);
+}
+.modal-form-thumb:focus-within .modal-form-input {
+  outline: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.modal-form-textarea {
+  resize: none;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.modal-form-thumb + .modal-form-thumb {
+  margin-top: 10px;
+}
+.modal-form-accept {
+  margin-top: 20px;
+}
+.checkbox-text {
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+.checkbox-text-link {
+  color: var(--accent-color);
+}
+
+.checkbox-accept {
+  cursor: pointer;
+}
+
+.modal-form-button {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+
+  border-color: transparent;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 }
